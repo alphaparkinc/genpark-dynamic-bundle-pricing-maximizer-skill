@@ -1,0 +1,38 @@
+{
+  "name": "genpark-dynamic-bundle-pricing-maximizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic cross-category e-commerce product bundle pricing optimizer maximizing Average Order Value (AOV) and conversion margin curves.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "pricing-intelligence",
+  "tags": [
+    "bundle-pricing",
+    "aov-optimization",
+    "cross-sell",
+    "ecommerce-algorithms",
+    "discount-curve"
+  ],
+  "inputs": {
+    "anchor_product": {
+      "type": "string",
+      "default": "Roborock Q Revo Vacuum"
+    },
+    "anchor_price": {
+      "type": "number",
+      "default": 799.0
+    }
+  },
+  "outputs": {
+    "bundle_id": {
+      "type": "string"
+    },
+    "optimized_bundle_price": {
+      "type": "number"
+    },
+    "average_order_value_lift": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
